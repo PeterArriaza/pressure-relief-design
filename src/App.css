@@ -1,38 +1,109 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #444;
   text-align: center;
+  line-height: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+  margin: 0;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  /* height: 80px; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 10px 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  padding: 12% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-left: 20px;
+  align-self: center;
+}
+
+#logo {
+  display: flex;
+  align-content: center;
+}
+
+.spacer {
+  height: 100%;
+  background-color: lightgreen;
+}
+
+form {
+  display: inline-block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+}
+
+#dashboard {
+  height: 100%;
+  padding: 0;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  float: left;
+  background-color: lightsteelblue;
+}
+
+.detailView {
+  height: 100%;
+  margin-left: 200px;
+  background-color: white;
+}
+
+#deviceList {
+  display: block;
+}
+
+.item {
+  border: 1px solid black;
+  margin: 5px;
 }
