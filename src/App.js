@@ -6,8 +6,8 @@ import DeviceListView from "./components/DeviceListView"
 
 export default function App() {
   return (
-  <Nav />
-  <Sidebar />
-  <DeviceListView />
+  <Nav></Nav>
+  <Sidebar></Sidebar>
+  <DeviceListView></DeviceListView>
   )
 }
