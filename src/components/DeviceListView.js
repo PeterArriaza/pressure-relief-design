@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/DeviceListView";
+import "../styles/DeviceListView.css";
 
 export default function DeviceListView() {
   return (
